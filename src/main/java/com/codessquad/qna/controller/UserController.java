@@ -17,7 +17,7 @@ public class UserController {
     public String create(User user){
         users.add(user);
         System.out.println("User : "+user);
-        return "/welcome";
+        return "redirect:/user/list";
     }
 
     @GetMapping("/user/list")
